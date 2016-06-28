@@ -1,13 +1,13 @@
 {
   "name": "jsanimatedmodal",
   "main": "animatedModal.js",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/joaopereirawd/animatedModal.js",
   "authors": [
     "João Pereira <joaopereirawd@gmail.com>",
     "Jack Westbrook <jack.westbrook@gmail.com>"
   ],
-  "description": "animatedModal.js is a javascript plugin to create a fullscreen modal with CSS3 transitions. you can use the transitions by animate.css or create yourself their transitions.",
+  "description": "A javascript plugin to create modals with animate.css support.",
   "license": "MIT",
   "ignore": [
     "**/.*",
