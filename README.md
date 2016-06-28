@@ -63,18 +63,20 @@ Then use a click event attached to an element to open the modal.
     });
 
 ## Options
-The following options can be declared when creating a new AnimatedModal
+The following options can be declared when creating a new AnimatedModal:
 
-    animatedIn: 'zoomIn', // the animate.css class to apply for open animation.
-    animatedOut: 'zoomOut', // the animate.css class to apply for close animation.
-    closeBtn: '.close-modal', // A reference to the element in your content that closes the modal. Can be false to handle closing externally.
+    animatedIn: 'zoomIn', // the animate.css / animation class name to apply for open animation.
+    animatedOut: 'zoomOut', // the animate.css / animation class name to apply for close animation.
+    closeBtn: '.close-modal', // A reference to the element in your content that closes the modal.
+    // closeBtn can be false to handle closing externally e.g. using a framework like Knockout.
     modalBaseClass: 'animated-modal', // used for applying 'on' and 'off' classes to the modal
     modalTarget: 'animated-modal', // the ID of the modal or a DOM element.
 
 ## Callbacks
-The following callbacks are available before / after open / close.
-    afterClose: null,
-    afterOpen: null,
-    beforeClose: null,
-    beforeOpen: null,
-    escClose: null, // only fires on esc key close.
+The following callbacks are available:
+
+    afterClose: null, // function to fire when the animation has completed on close
+    afterOpen: null, // function to fire when the animation has completed on open
+    beforeClose: null, // function to fire before the close animation starts
+    beforeOpen: null, // function to fire before the open animation starts
+    escClose: null, // function to fire on esc key close.
